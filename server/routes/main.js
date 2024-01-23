@@ -30,6 +30,7 @@ router.get("/", async (req, res) => {
       current: page,
       nextPage: hasNextPage ? nextPage : null,
       prevPage: hasNextPagePlus ? page - 1 : null,
+      currentRoute: "/",
     });
   } catch (error) {
     console.log(error);
